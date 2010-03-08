@@ -1,0 +1,5 @@
+AuthType Basic
+AuthUserFile /srv/httpd/htdocs/rc/return/.htpasswd
+AuthBasicProvider file
+AuthName "inflate"
+Require huge

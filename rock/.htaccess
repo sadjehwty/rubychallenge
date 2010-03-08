@@ -1,0 +1,5 @@
+AuthType Basic
+AuthUserFile /srv/httpd/htdocs/rc/rock/.htpasswd
+AuthBasicProvider file
+AuthName "island:country"
+Require kohsamui

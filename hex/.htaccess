@@ -1,0 +1,5 @@
+AuthType Basic
+AuthUserFile /srv/httpd/htdocs/rc/hex/.htpasswd
+AuthBasicProvider file
+AuthName "pluses and minuses"
+Require butter
