@@ -1,0 +1,15 @@
+<VirtualHost 127.0.0.1:80>
+    ServerAdmin postmaster@rc.macrobug.uchi
+    DocumentRoot "/srv/www/htdocs/rubychallenge"
+    ServerName rc.macrobug.uchi
+    <Directory "/srv/www/htdocs/rubychallenge">
+                Options -Indexes FollowSymLinks MultiViews
+                AllowOverride All
+                Order allow,deny
+                allow from all
+    </Directory>
+    SetEnvIfNoCase Request_URI (.*)undefined dontlog
+    ErrorLog "/var/log/httpd/rubychallenge_uchi-error.log"
+    CustomLog "/var/log/httpd/rubychallenge_uchi-access.log" common
+</VirtualHost>
+
