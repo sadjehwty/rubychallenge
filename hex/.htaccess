@@ -1,5 +1,7 @@
 AuthType Basic
-AuthUserFile /srv/httpd/htdocs/rc/hex/.htpasswd
+AuthUserFile /srv/httpd/htdocs/rubychallenge/hex/.htpasswd
 AuthBasicProvider file
 AuthName "pluses and minuses"
-Require butter
+<Limit GET>
+  require valid-user
+</Limit>

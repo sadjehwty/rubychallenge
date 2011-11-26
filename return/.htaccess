@@ -1,5 +1,7 @@
 AuthType Basic
-AuthUserFile /srv/httpd/htdocs/rc/return/.htpasswd
+AuthUserFile /srv/httpd/htdocs/rubychallenge/return/.htpasswd
 AuthBasicProvider file
 AuthName "inflate"
-Require huge
+<Limit GET>
+  require valid-user
+</Limit>
